@@ -21,6 +21,7 @@ html {
 }
 html,
 body {
+  background-color: red;
   overflow-x: clip;
   max-width: 100%;
 }
