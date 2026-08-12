@@ -1,4 +1,4 @@
-/* <<<<<<< HEAD */
+
 @font-face {
   font-family: "vazir";
   src: url(./bootstraps/font/vazir/Vazir-FD-WOL.woff) format("woff");
@@ -22,7 +22,7 @@ html {
 }
 html,
 body {
-  background-color: red;
+  background-color: rgb(225, 0, 0);
   overflow-x: clip;
   max-width: 100%;
 }
@@ -5408,20 +5408,22 @@ header nav {
     border-radius: 15px;
     width: 70%;
     padding: 20px;
-}.img_mini {
+  }
+  .img_mini {
     display: flex;
     gap: 1.7rem;
     flex-direction: column;
     width: 20%;
     justify-content: space-between;
     align-items: center;
-}    .section_right {
-        margin-bottom: 1.3rem;
-        width: 102%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  }
+  .section_right {
+    margin-bottom: 1.3rem;
+    width: 102%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .flex_item_start_main figure {
@@ -7871,14 +7873,13 @@ header nav {
   }
 
   .products_conectin nav ul {
-  scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+  }
+  .products_conectin nav ul .temp_product_conectin {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
 }
-.products_conectin nav ul .temp_product_conectin {
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-}
-
 
 .products_like:not(.products_conectin) nav ul {
   scroll-snap-type: x mandatory;
@@ -7888,8 +7889,6 @@ header nav {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
-
-
 
 .img_big_wrap {
   background-color: #f3f6fa;
@@ -7901,7 +7900,7 @@ header nav {
 }
 
 @media (max-width: 767px) {
-   .img_big_wrap {
+  .img_big_wrap {
     width: 100%;
   }
   .img_mini {

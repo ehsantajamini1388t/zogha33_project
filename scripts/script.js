@@ -267,7 +267,6 @@ document.addEventListener("DOMContentLoaded", function () {
   handleResize();
   window.addEventListener("resize", handleResize);
 })();
-// =======
 const over_text = document.querySelectorAll(".over_text");
 const btn_daltise = document.querySelectorAll(".main_btn_more_details");
 for (let index = 0; index < over_text.length; index++) {
