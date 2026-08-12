@@ -23,6 +23,7 @@ html {
 html,
 body {
   overflow-x: clip;
+  background-color: rebeccapurple;
   max-width: 100%;
 }
 html.no_scoroll,
