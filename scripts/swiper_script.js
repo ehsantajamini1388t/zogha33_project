@@ -140,8 +140,16 @@
   });
 
   function handleResize() {
-    window.innerWidth < 992 ? buildDots() : removeDots();
+  if (window.innerWidth < 992) {
+    buildDots();
+    wrap.style.scrollBehavior = "auto";
+    slides[0].scrollIntoView({ inline: "center", block: "nearest" });
+    wrap.style.scrollBehavior = "";
+    setActiveDot(0);
+  } else {
+    removeDots();
   }
+}
 
   handleResize();
   window.addEventListener("resize", handleResize);
