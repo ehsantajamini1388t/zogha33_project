@@ -1291,7 +1291,11 @@ header nav {
   width: 100%;
   padding: 0 1rem;
 }
-
+@media (min-width: 1400px){
+  header nav{
+    width: 96.666667% !important;
+  }
+} 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .flex_child dt,
   .flex_child a,
@@ -1356,6 +1360,9 @@ header nav {
     border: 1px solid rgb(201, 198, 198);
     padding: 9px;
     border-radius: 10px;
+  }
+  header nav{
+    width: 95.666667% !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1439,6 +1446,9 @@ header nav {
     align-items: center;
     justify-content: center;
   }
+   header nav{
+    width: 95.666667% !important;
+   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .flex_item_start_main figure {
@@ -3909,7 +3919,7 @@ header nav {
     scroll-snap-stop: always;
   }
 }
-
+/* swioer_css */
 .products_like:not(.products_conectin) nav ul {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
