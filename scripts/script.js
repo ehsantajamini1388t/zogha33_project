@@ -203,3 +203,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
+
+
+
+
+
+const tipEl = document.createElement("div");
+tipEl.className = "js-tooltip";
+document.body.appendChild(tipEl);
+
+document.querySelectorAll(".has-tip").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    tipEl.textContent = el.getAttribute("data-tip");
+    tipEl.classList.add("show");
+  });
+
+  el.addEventListener("mousemove", (e) => {
+    const rect = el.getBoundingClientRect();
+    tipEl.style.left = rect.left + rect.width / 2 - tipEl.offsetWidth / 2 + "px";
+    tipEl.style.top = rect.top - tipEl.offsetHeight - 10 + "px";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    tipEl.classList.remove("show");
+  });
+});

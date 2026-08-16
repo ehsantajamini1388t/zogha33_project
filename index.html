@@ -14,52 +14,47 @@
 
 <body>
 
-    <div class="op_and_menu" id="op_and_menu">
-        <div class="open_box_meno">
-            <nav>
+
+    <header class="site-header container">
+
+        <div class="header-bar">
+            <nav class="main-nav" aria-label="منوی اصلی">
                 <ul>
-                    <li><a href="">خانه<i class="bi-house"></i></a></li>
-                    <li><a href="">محصولات<i class="bi-grid-3x3-gap"></i></a></li>
-                    <li><a href="">درباره ما<i class="bi-info-circle"></i></a></li>
-                    <li><a href="">تماس باما<i class="bi bi-telephone"></i></a></li>
+                    <li><a href=""><i class="bi bi-house"></i><span>خانه</span></a></li>
+                    <li><a href=""><i class="bi bi-grid-3x3-gap"></i><span>محصولات</span></a></li>
+                    <li><a href=""><i class="bi bi-info-circle"></i><span>درباره ما</span></a></li>
+                    <li><a href=""><i class="bi bi-telephone"></i><span>تماس باما</span></a></li>
                 </ul>
             </nav>
-            <button class="close" id="close"><i class="bi bi-x"></i></button>
-        </div>
-        <div class="rop">
-
-        </div>
-    </div>
-
-    <header class="container col-md-12 col-lg-12">
-
-        <div class="color_blue  col-sm-12 col-md-12 col-lg-12">
-            <div class="color_white col-sm-9 col-md-9 col-lg-9">
-                <nav class="nav_defalt col-sm-11 col-md-11 col-lg-11">
-                    <div class="items_right">
-                        <ul>
-                            <li><i class="bi-house"></i><a href="">خانه</a></li>
-                            <li><i class="bi-grid-3x3-gap"></i><a href="">محصولات</a></li>
-                            <li><i class="bi-info-circle"></i><a href="">درباره ما</a></li>
-                            <li><i class="bi bi-telephone"></i><a href="">تماس باما</a></li>
-                            <li class="meno_h" id="meno_h"><i class="bi bi-list"></i></li>
-                        </ul>
-                    </div>
-                    <div class="items_left">
-                        <ul>
-                            <li> <a href=""> <i class="bi bi-search"></i></a></li>
-                            <li> <a href=""><i class="bi bi-person-circle"></i></a>
-                                </a></li>
-                            <li> <a href=""><img class="logo" src="./img/logo.png" alt="لوگو" loading="lazy"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <button class="menu-toggle" id="meno_h" aria-label="باز کردن منو">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="brand">
+                <a href="" aria-label="جستجو"><i class="bi bi-search"></i></a>
+                <a href="" aria-label="حساب کاربری"><i class="bi bi-person-circle"></i></a>
+                <a href=""><img class="logo" src="./img/logo.png" alt="لوگو" loading="lazy"></a>
             </div>
         </div>
-
     </header>
     <main class="container">
+        <!-- click menu_h open... -->
+        <div class="op_and_menu" id="op_and_menu">
+            <div class="open_box_meno">
+                <nav>
+                    <ul>
+                        <li><a href="">خانه<i class="bi-house"></i></a></li>
+                        <li><a href="">محصولات<i class="bi-grid-3x3-gap"></i></a></li>
+                        <li><a href="">درباره ما<i class="bi-info-circle"></i></a></li>
+                        <li><a href="">تماس باما<i class="bi bi-telephone"></i></a></li>
+                    </ul>
+                </nav>
+                <button class="close" id="close"><i class="bi bi-x"></i></button>
+            </div>
+            <div class="rop">
+
+            </div>
+        </div>
+        <!-- jump to top -->
         <button id="scrollToTopBtn" class="scroll-btn">
             <i class="bi bi-arrow-up-short"></i>
         </button>
@@ -166,28 +161,28 @@
                         </a>
                     </div>
                     <div class="boxs">
-                        <div class="box" title="19*40 سانتی متر">
+                        <div class="box has-tip" data-tip="19*40 سانتی متر">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
                                 <span class="titr">ابعاد بسته‌بندی:</span>
                                 <span class="contant">19*40 سانتی متر</span>
                             </div>
                         </div>
-                        <div class="box" title="2.5*4 سانتی متر">
+                        <div class="box has-tip" data-tip="2.5*4 سانتی متر">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
                                 <span class="titr">ابعاد زغال:</span>
                                 <span class="contant">2.5*4 سانتی متر</span>
                             </div>
                         </div>
-                        <div class="box" title="6 عدد">
+                        <div class="box has-tip" data-tip="6 عدد">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
                                 <span class="titr">تعداد بسته در کارتن:</span>
                                 <span class="contant">6 عدد</span>
                             </div>
                         </div>
-                        <div class="box" title="بسته‌بندی شکیل">
+                        <div class="box has-tip" data-tip="بسته‌بندی شکیل">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
 
@@ -195,14 +190,14 @@
                                 <span class="contant">بسته‌بندی شکیل</span>
                             </div>
                         </div>
-                        <div class="box" title="2 ساعت">
+                        <div class="box has-tip" data-tip="2 ساعت">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
                                 <span class="titr">مدت زمان سوختن:</span>
                                 <span class="contant">2 ساعت</span>
                             </div>
                         </div>
-                        <div class="box" title="زغال فشرده (بریکت)">
+                        <div class="box has-tip" data-tip="زغال فشرده (بریکت)">
                             <i class="bi bi-command"></i>
                             <div class="text_box">
                                 <span class="titr">نوع دسته‌بندی:</span>
@@ -245,11 +240,13 @@
             <h2 class="header_product">کالاهای مشابه</h2>
             <nav class="container ">
                 <ul class=" ">
-                    <li class="temp_product">
+                    <li class="temp_product" title="">
                         <a href="" class="product">
                             <img src="./img/product.webp" alt="" loading="lazy">
                             <div>
-                                <h3>زغال باربیکیو فشرده خودسوز پلاس مخصوص کباب پاکت آلومینیومی 2 کیلوگرمی
+                                <h3 class="has-tip"
+                                    data-tip="زغال باربیکیو فشرده خودسوز پلاس مخصوص کباب پاکت آلومینیومی 2 کیلوگرمی">
+                                    زغال باربیکیو فشرده خودسوز پلاس مخصوص کباب پاکت آلومینیومی 2 کیلوگرمی
                                 </h3>
                             </div>
                         </a>
@@ -258,7 +255,8 @@
                         <a href="" class="product">
                             <img src="./img/product_2.webp" alt="" loading="lazy">
                             <div>
-                                <h3>زغال باربیکیو فشرده شده بسته 1.5 کیلوگرم</h3>
+                                <h3 class="has-tip" data-tip="زغال باربیکیو فشرده شده بسته 1.5 کیلوگرم">زغال باربیکیو
+                                    فشرده شده بسته 1.5 کیلوگرم</h3>
                             </div>
                         </a>
                     </li>
@@ -266,7 +264,8 @@
                         <a href="" class="product">
                             <img src="./img/product_3.webp" alt="" loading="lazy">
                             <div>
-                                <h3>بیو زغال برش خورده مخصوص قلیان کارتن 6 کیلوگرمی</h3>
+                                <h3 class="has-tip" data-tip="بیو زغال برش خورده مخصوص قلیان کارتن 6 کیلوگرمی">بیو زغال
+                                    برش خورده مخصوص قلیان کارتن 6 کیلوگرمی</h3>
                             </div>
                         </a>
                     </li>
@@ -274,7 +273,8 @@
                         <a href="" class="product">
                             <img src="./img/product_4.webp" alt="" loading="lazy">
                             <div>
-                                <h3>زغال کبابی ممتاز طبیعی بسته 1300 گرمی</h3>
+                                <h3 class="has-tip" data-tip="زغال کبابی ممتاز طبیعی بسته 1300 گرمی">زغال کبابی ممتاز
+                                    طبیعی بسته 1300 گرمی</h3>
                             </div>
                         </a>
                     </li>
@@ -289,7 +289,8 @@
                         <a href="" class="product">
                             <img src="./img/product6.webp" alt="" loading="lazy">
                             <div>
-                                <h3>ژل آتش زا استاندارد پت 800 سی سی</h3>
+                                <h3 class="has-tip" data-tip="ژل آتش زا استاندارد پت 800 سی سی">ژل آتش زا استاندارد پت
+                                    800 سی سی</h3>
                             </div>
                         </a>
                     </li>
@@ -297,7 +298,8 @@
                         <a href="" class="product">
                             <img src="./img/product_5.webp" alt="" loading="lazy">
                             <div>
-                                <h3>الکل صنعتی استاندارد پت 450 سی سی</h3>
+                                <h3 class="has-tip" data-tip="الکل صنعتی استاندارد پت 450 سی سی">الکل صنعتی استاندارد پت
+                                    450 سی سی</h3>
                             </div>
                         </a>
                     </li>
@@ -821,8 +823,10 @@
         </section>
         <p class="copy_right">تمامی حقوق مادی و معنوی سایت برای شرکت رخشان سپهر کاشان محفوظ می‌باشد. هرگونه کپی‌برداری
             بدون ذکر منبع مجاز نمی‌باشد.</p>
+
+        <script src="./style/swiper/swiper-14.1.0 (1)/package/swiper-bundle.min.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/swiper_script.js"></script>
     </footer>
-    <script src="./style/swiper/swiper-14.1.0 (1)/package/swiper-bundle.min.js"></script>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/swiper_script.js"></script>
+
 </body>
