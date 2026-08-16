@@ -4184,6 +4184,7 @@ header nav {
     padding: 10px 1rem;
   }
 }
+/* tooltip */
 .js-tooltip {
   position: fixed;
   background: #001442;
